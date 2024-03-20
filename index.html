@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<title>Frontend Mentor | Intro section with dropdown navigation</title>
+	<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+
+	<header>
+		<div class="header-contents">
+			<img src="images/logo.svg" alt="snap logo" id="snapIcon">
+			<div id="deaktop-navigations">
+
+			</div>
+		</div>
+		<nav>
+			<div class="header-contents">
+				<img src="images/icon-menu.svg" alt="hamburger-icon" id="burgerIcon">
+			</div>
+
+			<div id="signIn-UpBtns">
+				<button id="login">Login</button>
+				<button id="register">Register</button>
+			</div>
+
+
+
+			<div id="modal">
+				<div id="dropdownMenu">
+
+					<img src="images/icon-close-menu.svg" alt="menu close icon" id="closeMenuIcon">
+					<div id="featuresList">
+						<ul>
+							<li id="featuresDropdown">Features &nbsp <img src="images/icon-arrow-down.svg" id="arrow1"
+									alt="arrow up icon">
+								<ul class="featuresSubMenu">
+									<li><img src="images/icon-todo.svg" alt="todo icon">Todo List</li>
+									<li><img src="images/icon-calendar.svg" alt="calender icon">Calendar</li>
+									<li><img src="images/icon-reminders.svg" alt="reminder icon">Reminders</li>
+									<li><img src="images/icon-planning.svg" alt="planning icon">Planning</li>
+								</ul>
+							</li>
+
+							<li id="companyDropdown">Company &nbsp <img src="images/icon-arrow-down.svg" id="arrow2"
+									alt="arrow down icon">
+								<ul class="companySubMenu">
+									<li>History</li>
+									<li>Our Team</li>
+									<li>Blog</li>
+								</ul>
+							</li>
+
+							<li>Careers</li>
+							<li>About</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+
+	<main>
+
+		<img src="" alt="hero image" id="heroImage">
+
+		<div id="page-info">
+			<h1>Make remote work</h1>
+			<p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch
+				productivity soar.</p>
+			<button id="learnMoreBtn">Learn more</button>
+			<br /><br />
+
+			<div id="clients">
+				<img src="images/client-databiz.svg" alt="databiz client">
+				<img src="images/client-audiophile.svg" alt="audiophile client">
+				<img src="images/client-meet.svg" alt="meet client">
+				<img src="images/client-maker.svg" alt="maker client">
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+			Coded by <a href="#">your name here</a>.
+		</div>
+	</footer>
+
+
+
+	<script src="app.js" defer></script>
+</body>
+
+</html>
