@@ -23,15 +23,15 @@ Users should be able to:
 - View the optimal layout for the content depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-### Screenshot
+### Desktop screenshot
 
 ![Desktop preview screenshot](./images/intro-section-dropdown-menu-desktop-screenshot.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Sarah-okolo/intro-section-with-dropdown-navigation-main)
-- Live Site URL: [Add live site URL here](https://introsection-with-dropdown-navigation.netlify.app/)
+- Solution URL: [intro-section-with-dropdown-navigation-main](https://github.com/Sarah-okolo/intro-section-with-dropdown-navigation-main)
+- Live Site URL: [introsection-with-dropdown-navigation](https://introsection-with-dropdown-navigation.netlify.app/)
 
 ## My process
 
@@ -50,4 +50,4 @@ I learned how to create a beautiful custom dropdown menu when building this proj
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/sarah-okolo)
+- Frontend Mentor - [@sarah-okolo](https://www.frontendmentor.io/profile/sarah-okolo)
