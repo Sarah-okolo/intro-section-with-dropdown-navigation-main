@@ -1,340 +1,326 @@
-	@import url('https://fonts.google.com/specimen/Epilogue');
-  				
-    
-    :root{
-    			--almostWhite: hsl(0, 0%, 98%);
-    			--mediumGray: hsl(0, 0%, 41%);
-    			--almostBlack: hsl(0, 0%, 8%);
-    			--fontSize:18px;
-    }
-    
-    *{
-    				margin:0;
-    				padding:0;
-    				box-sizing:border-box;
-    				}
-    				
-    body{
-      background-color:var(--almostWhite);
-      font-family: 'Epilogue';
-      position:relative;
-      overflow-X:hidden;
-      }
-      
-    header{
-				    display:flex;
-   				 justify-content:space-between;
-   				 width:100vw;
-   				 height:auto;
-    				position:sticky;
-				    top:0;
-				    background-color:var(--almostWhite);
-				    z-index:6;
-    				}
-    				
-    
-     .header-contents{
-         margin:22px;
-    }
-    
-    #modal{
-         width:0;
-         height:100vh;
-         position:fixed;
-         top:0;
-         right:0;
-         background:rgba(0,0,0,0.5);
-         z-index:5;
-         transition: width 1s ease;
-         
-         }
-         
-    #dropdownMenu{
-          background:var(--almostWhite);
-          height:100%;
-          width:55%;
-          position: absolute;
-          top:0;
-          right:0;
-         overflow-Y:scroll;
-         }
-         
-        #closeMenuIcon{
-            margin:15px 0px 15px 80%;
-           
-            }
-          
-                
-         #featuresList > ul > li{
-               color:var(--mediumGray);
-               list-style-type:none;
-               margin:20px 30px;
-               font-size:1.5rem;
-               transition: transform .5s ease;
-               }
-               
-               
-        .featuresSubMenu,.companySubMenu{
-                  margin:15px 5px;
-                  display:none;
-                  }
-                  
-                  
-   .featuresSubMenu > li,.companySubMenu > li{
-                margin:15px;
-                list-style-type:none;
-                }
-                
-         .featuresSubMenu > li > img,.companySubMenu > li >img{
-                 margin:0px 10px;
-                 }
-                 
-           #featuresList ul > li:hover{
-                  color:var(--almostBlack);                  
-                  cursor:pointer;
-                  }
-                  
-              .block{
-              display:block;
-              }
-              
-            .rotate{
-              transform:rotate(180deg);
-              }
-              
-    #heroImage{
-      object-fit:contain;
-      width:100%;
-      animation:slideEffect 1s ease 1;
-      }
-      
-      @keyframes slideEffect{
-       0%{
-           transform:translateX(100%);
-           opacity:0;
-           }
-        100%{
-          transform:translateX(0%);
-          opacity:1;
-          }
-      }
-      
-      
-      #page-info{
-      display:grid;
-       width:100vw;
-       height:auto;
-       padding:20px;
-       animation:slideUpEffect 1s ease 1;
-       }
-       
-        @keyframes slideUpEffect{
-       0%{
-           transform:translateY(100%);
-           opacity:0;
-           }
-        100%{
-          transform:translateY(0%);
-          opacity:1;
-          }
-      }
-      
-       #page-info > h1{
-          text-align:center;
-          font-size:3rem;
-          margin:15px auto;
-          color:var(--almostBlack);
-          }
-        
-        #page-info > p{
-           text-align:center;
-           color:var(--mediumGray);
-           margin-bottom:15px;
-           padding:10px 20px 20px 20px;
-           line-height:1.5;
-           letter-spacing:1px;
-           word-spacing:3px;
-           	font-size:var(--fontSize);
-           }
-           
-       #learnMoreBtn{
-       				background:black;
-       				color:var(--almostWhite);
-       				padding:12px;
-       				border-radius:12px;
-       				font-size:var(--fontSize);
-       				width:40%;
-       				border:2px solid black;
-       				outline:none;
-       				user-select: none;
-       				letter-spacing:1.5px;
-       	  		margin:auto;
-       	  		transition: all .5s;
-       			}
-       			
-       			
-       #learnMoreBtn:hover{
-           		 background:var(--almostWhite);
-       			   color:var(--almostBlack);
-       			   cursor:pointer;
-       			   transform:scale(1.1);
-       			  }
-       			  
-       			 
-       			#clients{
-       		margin:20px 0px;
-       		display:flex;
-       		justify-content:space-evenly;
-       			}
-       			
-       			#clients > img{
-       			   width:15%;
-       			   object-fit:contain;
-       			   }
-       			
-  			#signIn-UpBtns{
-  							   display: none;
-  							   }
-       			
-    .attribution {
-              font-size: 11px;
-              text-align: center; 
-             margin:10px;
-    }
-    .attribution a { 
-            color:var(--mediumGray);
-           font-size:15px;
-        }
-    
+@import url("https://fonts.google.com/specimen/Epilogue");
 
-
-
-
-
-
-@media (min-width:850px){
-				main{
-								display:flex;
-								justify-content: space-evenly;
-				}
-				#heroImage{
-				      order:2;
-				      width:37%;
-				      }
-				      
-				      #snapIcon{
-				      				margin-lef:10px;
-				      }
-				  #page-info{
-				  				width:37%;
-				  		padding-top:60px;
-				  }
-				  
-				    #page-info > p{
-				  				text-align:left;
-				  				margin:15px 0px 20px 0px;
-				  				padding-left:0;
-				  				}
-				  				
-				   #page-info > h1{
-				  				text-align:left;
-				  				margin:0;
-				  				font-size:4rem;
-				  				}
-				  				
-				  .attribution{
-				  				margin:50px 0px 10px 0px;
-				  }
-				  
-				    #learnMoreBtn{
-				    				margin:0;
-				    	}
-				    	
-				    	#clients{
-				    					justify-content: space-between;
-				    	}
-				    	
-				    	#burgerIcon{
-				    					display:none;
-				    	}
-				    	#modal{
-				   		background: none;
-				    					width:auto;
-				    					height:auto;
-				    				 display:block;
-				    					position:absolute;
-				    					top:5px;
-				    					left:10%;
-				    					
-				    	}
-				    	#dropdownMenu{
-				    				background: none;
-				    				display:inline;
-				    					height:auto;
-				    					position:absolute;
-				    				width:auto;
-				    					right:42%;
-				    					overflow-Y:visible;
-				    	}
-				    	
-				    	#featuresList > ul{
-				    					  display:flex;
-				    				background:none;
-				    				font-size:5px;
-				    	}
-				    	
-				  	#featuresList > ul > li{
-				       	font-size:1rem;
-				     
-				    	}
-				    	
-				    	 	#featuresList > ul > li > ul{
-				    	 	background:white;
-				    	 	box-shadow:.3px .3px 15px var(--mediumGray);
-				    	 	border-radius:10px;
-				    	 	position: absolute;
-				    
-				    	 	}
-				     #closeMenuIcon{
-				    	   				display:none;
-				    	   				}
-				    	   
-				    	#signIn-UpBtns{
-				          	display: inline-block;
-				    					margin:0px 20px 0px 0px;
-				    					
-				    	}
-				    	#login{
-				    					background:var(--almostWhite);
-				    					color:var(--mediumGray);
-				    					border:none;
-				    					cursor:pointer;
-				    					outline:none;
-				    					margin-left:20px;
-				    					user-select:none;
-				    	}
-				    	
-				   	#register{
-				    					background:var(--almostWhite);
-				    					color:var(--mediumGray);
-				    					border:2px solid var(--mediumGray);
-				    					cursor: pointer;
-				    					border-radius:10px;
-				    					padding:10px 17px;
-				    					outline:none;
-				    					margin-left:20px;
-				    					user-select:none;
-				    	}
-				    	
-				    	#login:hover,#register:hover{
-				    					transform:scale(1.05);
-				    					transition:all .5s;
-				    					border-bottom:2px solid var(--mediumGray);
-				    	}
+:root {
+  --almostWhite: hsl(0, 0%, 98%);
+  --mediumGray: hsl(0, 0%, 41%);
+  --almostBlack: hsl(0, 0%, 8%);
+  --fontSize: 18px;
 }
 
-@media (min-width:1050px){
-				#modal{
-								left:1%;
-				}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--almostWhite);
+  font-family: "Epilogue";
+  position: relative;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: auto;
+  position: sticky;
+  top: 0;
+  background-color: var(--almostWhite);
+  z-index: 6;
+}
+
+.header-contents {
+  margin: 22px;
+}
+
+#modal {
+  width: 0;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  transition: width 1s ease;
+}
+
+#dropdownMenu {
+  background: var(--almostWhite);
+  height: 100%;
+  width: 55%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow-y: scroll;
+}
+
+#closeMenuIcon {
+  margin: 15px 0px 15px 80%;
+}
+
+#featuresList > ul > li {
+  color: var(--mediumGray);
+  list-style-type: none;
+  margin: 20px 30px;
+  font-size: 1.5rem;
+  transition: transform 0.5s ease;
+}
+
+.featuresSubMenu,
+.companySubMenu {
+  margin: 15px 5px;
+  display: none;
+}
+
+.featuresSubMenu > li,
+.companySubMenu > li {
+  margin: 15px;
+  list-style-type: none;
+}
+
+.featuresSubMenu > li > img,
+.companySubMenu > li > img {
+  margin: 0px 10px;
+}
+
+#featuresList ul > li:hover {
+  color: var(--almostBlack);
+  cursor: pointer;
+}
+
+.block {
+  display: block;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+#heroImage {
+  object-fit: contain;
+  width: 100%;
+  animation: slideEffect 1s ease 1;
+}
+
+@keyframes slideEffect {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+#page-info {
+  display: grid;
+  width: 100vw;
+  height: auto;
+  padding: 20px;
+  animation: slideUpEffect 1s ease 1;
+}
+
+@keyframes slideUpEffect {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+#page-info > h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 15px auto;
+  color: var(--almostBlack);
+}
+
+#page-info > p {
+  text-align: center;
+  color: var(--mediumGray);
+  margin-bottom: 15px;
+  padding: 10px 20px 20px 20px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  font-size: var(--fontSize);
+}
+
+#learnMoreBtn {
+  background: black;
+  color: var(--almostWhite);
+  padding: 12px;
+  border-radius: 12px;
+  font-size: var(--fontSize);
+  width: 40%;
+  border: 2px solid black;
+  outline: none;
+  user-select: none;
+  letter-spacing: 1.5px;
+  margin: auto;
+  transition: all 0.5s;
+}
+
+#learnMoreBtn:hover {
+  background: var(--almostWhite);
+  color: var(--almostBlack);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#clients {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#clients > img {
+  width: 15%;
+  object-fit: contain;
+}
+
+#signIn-UpBtns {
+  display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 10px;
+}
+.attribution a {
+  color: var(--mediumGray);
+  font-size: 15px;
+}
+
+@media (min-width: 850px) {
+  main {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  #heroImage {
+    order: 2;
+    width: 37%;
+  }
+
+  #snapIcon {
+    margin-left: 10px;
+  }
+
+  #page-info {
+    width: 37%;
+    padding-top: 60px;
+  }
+
+  #page-info > p {
+    text-align: left;
+    margin: 15px 0px 20px 0px;
+    padding-left: 0;
+  }
+
+  #page-info > h1 {
+    text-align: left;
+    margin: 0;
+    font-size: 4rem;
+  }
+
+  .attribution {
+    margin: 50px 0px 10px 0px;
+  }
+
+  #learnMoreBtn {
+    margin: 0;
+  }
+
+  #clients {
+    justify-content: space-between;
+  }
+
+  #burgerIcon {
+    display: none;
+  }
+  #modal {
+    background: none;
+    width: auto;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 10%;
+  }
+  #dropdownMenu {
+    background: none;
+    display: inline;
+    height: auto;
+    position: absolute;
+    width: auto;
+    right: 42%;
+    overflow-y: visible;
+  }
+
+  #featuresList > ul {
+    display: flex;
+    background: none;
+    font-size: 5px;
+  }
+
+  #featuresList > ul > li {
+    font-size: 1rem;
+  }
+
+  #featuresList > ul > li > ul {
+    background: white;
+    box-shadow: 0.3px 0.3px 15px var(--mediumGray);
+    border-radius: 10px;
+    position: absolute;
+  }
+  #closeMenuIcon {
+    display: none;
+  }
+
+  #signIn-UpBtns {
+    display: inline-block;
+    margin: 0px 20px 0px 0px;
+  }
+  #login {
+    background: var(--almostWhite);
+    color: var(--mediumGray);
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin-left: 20px;
+    user-select: none;
+  }
+
+  #register {
+    background: var(--almostWhite);
+    color: var(--mediumGray);
+    border: 2px solid var(--mediumGray);
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px 17px;
+    outline: none;
+    margin-left: 20px;
+    user-select: none;
+  }
+
+  #login:hover,
+  #register:hover {
+    transform: scale(1.05);
+    transition: all 0.5s;
+    border-bottom: 2px solid var(--mediumGray);
+  }
+}
+
+@media (min-width: 1050px) {
+  #modal {
+    left: 1%;
+  }
 }
